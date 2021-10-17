@@ -1,8 +1,9 @@
-@import "../../node_modules/tailwindcss/dist/base.css";
-@import "../../node_modules/tailwindcss/dist/components.css";
-@import "../../node_modules/tailwindcss/dist/utilities.css";
+/* 這樣子 import 就可以，經過 postcss 之後會轉換成相對的路徑和內容 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-
+/* 如果沒有要指定區域，可以不需要使用 @layer */
 @layer components {
   .btn {
     @apply bg-purple-500 text-center text-white rounded px-3 py-1 hover:bg-purple-700;

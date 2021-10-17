@@ -8,5 +8,6 @@
 </template>
 
 <style>
+/* global css 雖然放在這邊也行，但我習慣放在 main.js，那邊又比這邊更加上層一點 */
 @import "./assets/style.css";
 </style>
